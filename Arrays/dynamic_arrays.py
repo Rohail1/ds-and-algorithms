@@ -42,7 +42,7 @@ class Array:
       self.list[index] = val
       self.counter += 1
     else:
-      print('index outside the range of continous memory')
+      print('index outside the range of continuous memory')
     
   def remove_nth(self, index):
      for i in range(index, self.counter):
@@ -50,6 +50,9 @@ class Array:
       
       self.list[self.counter - 1] =  None
       
+  def get_nth(self, index):
+      return self.list[index]
+
 
 if __name__ == '__main__':
   my_list = Array()
